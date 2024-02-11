@@ -2,6 +2,7 @@
 .terraform/
 terraform.tfstate.d/
 target/
+.vscode/
 
 # Files
 *.tfvars

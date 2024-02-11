@@ -11,11 +11,13 @@ module "network" {
 
 module "appservice" {
   source     = "./modules/appservice"
+  depends_on = [ module.network ]
   rgname     = var.rgname
   rglocation = var.rglocation
   prefix     = var.prefix
 }
 
+/*
 module "psql" {
   source     = "./modules/psql"
   rgname     = var.rgname

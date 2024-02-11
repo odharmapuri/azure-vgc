@@ -21,6 +21,6 @@ resource "azurerm_postgresql_database" "psql_db" {
   name                = "${var.prefix}-psql-db"
   resource_group_name = var.rgname
   server_name         = azurerm_postgresql_server.psql_server.name
-  charset             = "utf8"
-  collation           = "en_US.utf8"
+  charset             = "UTF8"
+  collation           = "en-US"
 }
