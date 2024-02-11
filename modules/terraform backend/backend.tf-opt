@@ -1,0 +1,11 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "azdemo-rg"
+    storage_account_name = "backend367899"
+    container_name       = "backend-container0"
+    key                  = "azdemo.terraform.tfstate"
+    #access_key           = "TWgdEJ1FslmqKqtclKLaccwEQ2QU9WJ8mXHOof1oARBpW+N+f3xCuqcjXSJuppDQl/8jjP3QUoYk+ASta0Raww=="
+    #lock_table_name      = data.locktable.name
+    #use_blob_lease       = true
+  }
+}

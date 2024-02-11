@@ -1,0 +1,2 @@
+rabbitmq port: 15672
+memcached port: 11211

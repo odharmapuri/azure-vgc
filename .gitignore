@@ -1,0 +1,10 @@
+# Dirs
+.terraform/
+terraform.tfstate.d/
+target/
+
+# Files
+*.tfvars
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
